@@ -320,3 +320,29 @@ For the official MCP Docs:
 Licensed under the Apache 2.0 License.
 
 Copyright 2025 Browserbase, Inc.
+
+Browserbase 功能分类和使用方法
+1. 单会话浏览器操作 (Single Session)
+基础会话管理
+browserbase_session_create: 创建单个浏览器会话
+browserbase_session_close: 关闭浏览器会话
+浏览器操作
+browserbase_stagehand_navigate: 导航到指定URL
+browserbase_stagehand_act: 执行页面操作（点击、输入等）
+browserbase_stagehand_extract: 提取页面数据
+browserbase_stagehand_observe: 观察页面元素
+browserbase_screenshot: 截取页面截图
+2. 多会话浏览器操作 (Multi Session)
+会话管理
+multi_browserbase_stagehand_session_create: 创建多个并行浏览器会话
+multi_browserbase_stagehand_session_list: 列出所有活动会话
+multi_browserbase_stagehand_session_close: 关闭指定会话
+会话内操作
+multi_browserbase_stagehand_navigate_session: 在指定会话中导航
+multi_browserbase_stagehand_act_session: 在指定会话中执行操作
+multi_browserbase_stagehand_extract_session: 在指定会话中提取数据
+multi_browserbase_stagehand_observe_session: 在指定会话中观察元素
+3. 系统功能
+browserbase_system: 系统相关操作
+multi_session_guidance: 多会话使用指导
+stagehand_usage: Stagehand使用说明
